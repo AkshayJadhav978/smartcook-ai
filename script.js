@@ -1,6 +1,6 @@
 const recipes = [
     { 
-        name: "Shakshuka", cat: "Veg", img: "images/shakshuka.jpg", 
+        name: "Shakshuka", cat: "Veg", img: "shakshuka.jpg", 
         ingredients: ["egg", "tomato"], 
         steps: [
             "Wash and finely dice your tomatoes into small chunks.",
@@ -12,7 +12,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Haleem", cat: "Non-Veg", img: "images/haleem.jpg", 
+        name: "Haleem", cat: "Non-Veg", img: "haleem.jpg", 
         ingredients: ["mutton", "broken wheat", "ghee", "urad dal", "ginger garlic paste", "onions", "shahi jeera", "lemon"], 
         steps: [
             "Soak broken wheat and urad dal separately for at least 3 hours.",
@@ -30,7 +30,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Chicken Biryani", cat: "Non-Veg", img: "images/chicken-biryani.jpg", 
+        name: "Chicken Biryani", cat: "Non-Veg", img: "chicken-biryani.jpg", 
         ingredients: ["chicken", "basmati rice", "curd", "mint", "biryani masala", "onions", "saffron", "cardamom", "cloves"], 
         steps: [
             "Marinate the chicken with curd, biryani masala, and salt for 1 hour.",
@@ -48,7 +48,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Mutton Biryani", cat: "Non-Veg", img: "images/mutton-biryani.jpg", 
+        name: "Mutton Biryani", cat: "Non-Veg", img: "mutton-biryani.jpg", 
         ingredients: ["mutton", "basmati rice", "curd", "onions", "ghee", "ginger garlic paste", "green chillies", "mint"], 
         steps: [
             "Clean and pressure cook the mutton with ginger garlic paste until 80% soft.",
@@ -66,7 +66,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Idli", cat: "Breakfast", img: "images/idli.jpg", 
+        name: "Idli", cat: "Breakfast", img: "idli.jpg", 
         ingredients: ["rice", "urad dal", "fenugreek seeds"], 
         steps: [
             "Rinse rice and urad dal thoroughly under running water.",
@@ -82,7 +82,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Gulab Jamun", cat: "Deserts", img: "images/gulab-jamun.jpg", 
+        name: "Gulab Jamun", cat: "Deserts", img: "gulab-jamun.jpg", 
         ingredients: ["khoya", "flour", "sugar", "cardamom", "ghee"], 
         steps: [
             "Grate the khoya into a wide mixing bowl.",
@@ -99,7 +99,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Natukodi Pulusu", cat: "Non-Veg", img: "images/natukodi-pulusu.jpg", 
+        name: "Natukodi Pulusu", cat: "Non-Veg", img: "natukodi-pulusu.jpg", 
         ingredients: ["country chicken", "coconut", "poppy seeds", "onions", "green chillies", "turmeric", "chilli powder", "curry leaves"], 
         steps: [
             "Clean the country chicken and cut it into medium pieces.",
@@ -115,7 +115,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Andhra Egg Vepudu", cat: "Non-Veg", img: "images/andhra-egg-vepudu.jpg", 
+        name: "Andhra Egg Vepudu", cat: "Non-Veg", img: "andhra-egg-vepudu.jpg", 
         ingredients: ["egg", "garlic", "pepper", "curry leaves", "onions", "turmeric", "chilli powder"], 
         steps: [
             "Boil the eggs, peel them, and set them aside.",
@@ -130,7 +130,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Egg Curry", cat: "Non-Veg", img: "images/egg-curry.jpg", 
+        name: "Egg Curry", cat: "Non-Veg", img: "egg-curry.jpg", 
         ingredients: ["egg", "onion", "tomato", "ginger", "garlic", "garam masala", "coriander"], 
         steps: [
             "Hard boil the eggs and peel them carefully.",
@@ -145,7 +145,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Egg Masala Fry", cat: "Non-Veg", img: "images/egg-masala-fry.jpg", 
+        name: "Egg Masala Fry", cat: "Non-Veg", img: "egg-masala-fry.jpg", 
         ingredients: ["egg", "chilli powder", "turmeric", "garam masala"], 
         steps: [
             "Boil the eggs and slice them into halves vertically.",
@@ -159,7 +159,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Egg Roast", cat: "Non-Veg", img: "images/egg-roast.jpg", 
+        name: "Egg Roast", cat: "Non-Veg", img: "egg-roast.jpg", 
         ingredients: ["egg", "onion", "pepper", "ginger garlic paste", "curry leaves"], 
         steps: [
             "Slice onions very thinly and fry them until they are dark brown.",
@@ -173,7 +173,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Egg Tadka", cat: "Non-Veg", img: "images/egg-tadka.jpg", 
+        name: "Egg Tadka", cat: "Non-Veg", img: "egg-tadka.jpg", 
         ingredients: ["egg", "garlic", "mustard seeds", "green chillies", "dry red chillies"], 
         steps: [
             "Crack eggs into a bowl and whisk with salt and green chillies.",
@@ -186,7 +186,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Kodi Vepudu", cat: "Non-Veg", img: "images/kodi-vepudu.jpg", 
+        name: "Kodi Vepudu", cat: "Non-Veg", img: "kodi-vepudu.jpg", 
         ingredients: ["chicken", "curry leaves", "onions", "green chillies", "black pepper", "ginger garlic paste"], 
         steps: [
             "Marinate small chicken pieces with ginger garlic paste and turmeric.",
@@ -202,7 +202,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Tomato Pappu", cat: "Veg", img: "images/tomato-pappu.jpg", 
+        name: "Tomato Pappu", cat: "Veg", img: "tomato-pappu.jpg", 
         ingredients: ["dal", "tomato", "garlic", "green chillies", "turmeric", "mustard seeds", "cumin", "dry red chillies"], 
         steps: [
             "Wash toor dal and add it to a pressure cooker.",
@@ -217,7 +217,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Thotakura Pappu", cat: "Veg", img: "images/thotakura-pappu.jpg", 
+        name: "Thotakura Pappu", cat: "Veg", img: "thotakura-pappu.jpg", 
         ingredients: ["amaranth leaves", "dal", "garlic", "tamarind", "dry red chillies", "mustard seeds"], 
         steps: [
             "Pressure cook dal with chopped amaranth leaves (Thotakura).",
@@ -231,7 +231,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Gutthi Vankaya", cat: "Veg", img: "images/gutthi-vankaya.jpg", 
+        name: "Gutthi Vankaya", cat: "Veg", img: "gutthi-vankaya.jpg", 
         ingredients: ["brinjal", "peanuts", "sesame", "tamarind", "onions", "ginger", "garlic", "coriander seeds"], 
         steps: [
             "Slit the small brinjals into four without cutting the stem.",
@@ -247,7 +247,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Gongura Pachadi", cat: "Veg", img: "images/gongura-pachadi.jpg", 
+        name: "Gongura Pachadi", cat: "Veg", img: "gongura-pachadi.jpg", 
         ingredients: ["gongura leaves", "red chillies", "garlic", "mustard seeds", "fenugreek seeds"], 
         steps: [
             "Pluck gongura leaves and wash them thoroughly.",
@@ -262,7 +262,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Curd Rice", cat: "Veg", img: "images/curd-rice.jpg", 
+        name: "Curd Rice", cat: "Veg", img: "curd-rice.jpg", 
         ingredients: ["rice", "curd", "milk", "ginger", "green chillies", "mustard seeds", "curry leaves"], 
         steps: [
             "Cook rice until it is slightly overdone and soft.",
@@ -276,7 +276,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Chole Bhature", cat: "Veg", img: "images/chole-bhature.jpg", 
+        name: "Chole Bhature", cat: "Veg", img: "chole-bhature.jpg", 
         ingredients: ["chickpeas", "flour", "onion", "tomato", "curd", "chole masala", "sugar"], 
         steps: [
             "Soak chickpeas overnight and pressure cook until soft.",
@@ -291,7 +291,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Masala Dosa", cat: "Breakfast", img: "images/masala-dosa.jpg", 
+        name: "Masala Dosa", cat: "Breakfast", img: "masala-dosa.jpg", 
         ingredients: ["dosa batter", "potato", "onion", "turmeric", "mustard seeds"], 
         steps: [
             "Prepare the potato filling by mashing boiled potatoes.",
@@ -305,7 +305,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Sarva Pindi", cat: "Breakfast", img: "images/sarva-pindi.jpg", 
+        name: "Sarva Pindi", cat: "Breakfast", img: "sarva-pindi.jpg", 
         ingredients: ["rice flour", "peanuts", "chana dal", "sesame seeds", "ginger garlic paste"], 
         steps: [
             "Soak chana dal for 1 hour before starting.",
@@ -321,7 +321,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Sakinalu", cat: "Breakfast", img: "images/sakinalu.jpg", 
+        name: "Sakinalu", cat: "Breakfast", img: "sakinalu.jpg", 
         ingredients: ["rice flour", "sesame seeds", "ajwain"], 
         steps: [
             "Wash and soak rice, then dry it on a cloth for 2 hours.",
@@ -335,7 +335,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Butter Naan", cat: "Breads", img: "images/butter-naan.jpg", 
+        name: "Butter Naan", cat: "Breads", img: "butter-naan.jpg", 
         ingredients: ["flour", "butter", "yeast", "curd", "sugar"], 
         steps: [
             "Dissolve yeast and sugar in warm water and let it bloom.",
@@ -349,7 +349,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Rumali Roti", cat: "Breads", img: "images/rumali-roti.jpg", 
+        name: "Rumali Roti", cat: "Breads", img: "rumali-roti.jpg", 
         ingredients: ["flour", "milk"], 
         steps: [
             "Mix flour with a little salt and warm milk.",
@@ -363,7 +363,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Thandoori Roti", cat: "Breads", img: "images/thandoori-roti.jpeg", 
+        name: "Thandoori Roti", cat: "Breads", img: "thandoori-roti.jpeg", 
         ingredients: ["wheat flour", "ghee"], 
         steps: [
             "Make a standard dough using wheat flour and water.",
@@ -376,7 +376,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Double Ka Meetha", cat: "Deserts", img: "images/double-ka-meetha.jpg", 
+        name: "Double Ka Meetha", cat: "Deserts", img: "double-ka-meetha.jpg", 
         ingredients: ["bread", "milk", "sugar", "ghee", "cashews", "cardamom"], 
         steps: [
             "Cut the bread slices into triangles or squares.",
@@ -391,7 +391,7 @@ const recipes = [
         ] 
     },
     { 
-        name: "Payasam", cat: "Deserts", img: "images/payasam.jpg", 
+        name: "Payasam", cat: "Deserts", img: "payasam.jpg", 
         ingredients: ["vermicelli", "milk", "sugar", "ghee", "raisins", "cashews"], 
         steps: [
             "Heat ghee in a pan and roast cashews and raisins until golden.",
