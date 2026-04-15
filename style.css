@@ -1,0 +1,172 @@
+:root {
+    --bg: #05080f; --card: #111827; --primary: #10b981;
+    --accent: #f59e0b; --text: #ffffff; --text-dim: #9ca3af;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 15px; }
+
+.hero { padding: 20px 15px; text-align: center; }
+.brand { font-size: 1.8rem; font-weight: 800; margin-bottom: 15px; }
+.brand span { color: var(--primary); }
+
+.search-container { position: relative; width: 100%; max-width: 400px; margin: 0 auto; }
+.search-container input {
+    width: 100%; padding: 12px 20px; border-radius: 50px; 
+    border: 1px solid var(--glass); background: var(--card); 
+    color: white; outline: none; box-sizing: border-box; font-size: 0.95rem;
+}
+
+.input-inner { display: flex; gap: 8px; background: var(--card); padding: 8px; border-radius: 15px; border: 1px solid var(--glass); }
+.input-inner input { flex: 1; background: transparent; border: none; color: white; outline: none; padding-left: 10px; }
+#addBtn { background: var(--accent); border: none; padding: 8px 18px; border-radius: 10px; font-weight: 800; color: #000; cursor: pointer; }
+
+.suggestions-box {
+    position: absolute; left: 0; right: 0; background: #1f2937; 
+    border: 1px solid var(--primary); border-radius: 12px; 
+    z-index: 100; margin-top: 5px; max-height: 200px; overflow-y: auto;
+}
+.suggestion-item { padding: 12px 15px; cursor: pointer; border-bottom: 1px solid var(--glass); }
+
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.tag { background: rgba(245, 158, 11, 0.1); color: var(--accent); padding: 6px 14px; border-radius: 50px; border: 1px solid var(--accent); font-size: 0.75rem; cursor: pointer; }
+
+.filter-wrapper { display: flex; gap: 8px; overflow-x: auto; padding: 15px 0; scrollbar-width: none; }
+.f-pill { padding: 10px 18px; border-radius: 50px; background: var(--glass); color: var(--text-dim); border: none; white-space: nowrap; cursor: pointer; font-size: 0.85rem; }
+.f-pill.active { background: var(--primary); color: #000; font-weight: 800; }
+
+.section-title { font-size: 0.75rem; color: var(--primary); margin: 25px 0 15px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 800; }
+
+.recipe-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+.card { position: relative; border-radius: 20px; overflow: hidden; background: var(--card); height: 170px; cursor: pointer; border: 1px solid var(--glass); }
+.card img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5); transition: 0.3s; }
+.card:hover img { filter: brightness(0.7); transform: scale(1.05); }
+.card-body { position: absolute; bottom: 0; padding: 15px; width: 100%; background: linear-gradient(transparent, rgba(0,0,0,0.9)); box-sizing: border-box; }
+.card-body h3 { margin: 0; font-size: 1rem; }
+
+.horizontal-scroll { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 15px; scrollbar-width: none; }
+.horizontal-scroll .card { min-width: 240px; }
+
+/* REFINED MODAL - BACK TO GOATED STATUS */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 15px; }
+.modal-content { background: var(--card); width: 100%; max-width: 450px; padding: 25px; border-radius: 25px; max-height: 85vh; overflow-y: auto; position: relative; border: 1px solid var(--glass); }
+.back-btn { background: var(--glass); border: none; color: white; padding: 8px 15px; border-radius: 10px; margin-bottom: 20px; cursor: pointer; font-size: 0.8rem; }
+
+.instruction-box { 
+    padding: 14px 18px; /* Increased padding for better look */
+    border-radius: 15px; 
+    background: rgba(255,255,255,0.03); 
+    margin-bottom: 12px; 
+    border-left: 4px solid var(--accent); 
+    line-height: 1.5; 
+    font-size: 0.9rem;
+    color: #e5e7eb;
+}
+.instruction-box b { 
+    color: var(--accent); 
+    text-transform: uppercase; 
+    font-size: 0.7rem; 
+    display: block; 
+    margin-bottom: 6px; 
+    letter-spacing: 1px;
+}
+
+mark { background: rgba(245, 158, 11, 0.25); color: var(--accent); padding: 0 4px; border-radius: 4px; font-weight: bold; }
+.yt-btn { display: block; text-align: center; background: #ff0000; color: white; padding: 15px; border-radius: 15px; text-decoration: none; font-weight: 800; margin-top: 20px; font-size: 0.95rem; }
+.hidden { display: none !important; }
+
+@media (min-width: 768px) { .recipe-grid { grid-template-columns: repeat(2, 1fr); } }
+
+
+
+
+
+/* ABOUT SECTION STYLING */
+.about-section {
+    position: relative;
+    padding: 60px 0 40px;
+    margin-top: 40px;
+    background: linear-gradient(to bottom, transparent, #0a0f1a);
+    overflow: hidden;
+}
+
+.about-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: var(--primary);
+    filter: blur(120px);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.about-lead {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    background: var(--glass);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    background: rgba(16, 185, 129, 0.05);
+}
+
+.f-icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature-box h4 {
+    margin: 0 0 8px 0;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.feature-box p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.4;
+}
+
+.project-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--glass);
+}
+
+.project-footer p {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

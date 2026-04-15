@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCook | 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="brand">🥗 Smart<span>Cook</span></div>
+        <div class="search-container">
+            <input id="search" type="text" placeholder="Search dish..." oninput="handleSearch(this)" autocomplete="off">
+            <div id="search-suggestions" class="suggestions-box hidden"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="pantry-card">
+            <div class="input-wrapper">
+                <div class="input-inner">
+                    <input id="ingredientInput" type="text" placeholder="What's in your kitchen?" oninput="showSuggestions(this, 'pantry-suggestions')" autocomplete="off">
+                    <button id="addBtn" onclick="handleAddIngredient()">Add</button>
+                </div>
+                <div id="pantry-suggestions" class="suggestions-box hidden"></div>
+            </div>
+            <div id="tags" class="tag-cloud"></div>
+        </section>
+
+        <div id="filters" class="filter-wrapper"></div>
+
+        <h2 class="section-title">Your Collection</h2>
+        <section id="recipes" class="recipe-grid"></section>
+
+        <h2 class="section-title">Quick Bites & Deserts</h2>
+        <div id="easy-row" class="horizontal-scroll"></div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="back-btn" onclick="closeModal()">← Back</button>
+            <div id="modalData"></div>
+        </div>
+    </div>
+    <section class="about-section">
+        <div class="about-glow"></div>
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Mission Control</h2>
+            <div class="about-content">
+                <p class="about-lead">SmartCook 2026 is an AI-driven culinary assistant designed to eliminate food waste by turning your "bare-fridge" moments into gourmet experiences.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <span class="f-icon">🎯</span>
+                        <h4>Precision Matching</h4>
+                        <p>Calculates real-time ingredient percentages to show you exactly what you can cook right now.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="f-icon">🔍</span>
+                        <h4>Smart Suggest</h4>
+                        <p>Predictive search logic that knows your pantry better than you do.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="f-icon">✨</span>
+                        <h4>Focus Mode</h4>
+                        <p>Interactive recipe steps that highlight the ingredients you already have.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="f-icon">🚀</span>
+                        <h4>Presentation Ready</h4>
+                        <p>Optimized for mobile viewing with a high-performance, lag-free interface.</p>
+                    </div>
+                </div>
+
+                <div class="project-footer">
+                    <p>© 2026 SmartCook Engineering | Built for the Future</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
